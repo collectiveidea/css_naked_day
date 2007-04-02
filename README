@@ -1,0 +1,21 @@
+CssNakedDay
+===========
+
+This plugin disables all stylesheets on CSS Naked Day.
+http://naked.dustindiaz.com/
+
+As long as you're using Rails' stylesheet_link_tag helper, your CSS will automatically be hidden on Naked Day (April 5).
+
+It also adds a method to the Date class so you can check if a day is Naked Day.
+
+Example
+=======
+
+<% if Date.today.is_css_naked_day? %>
+  <h3>What happened to the design?</h3>
+  <p>To know more about why styles are disabled on this website visit the
+  <a href="http://naked.dustindiaz.com" title="Web Standards Naked Day Host Website">
+  Annual CSS Naked Day</a> website for more information.</p>
+<% end %>
+
+Copyright (c) 2007 Daniel Morrison, Collective Idea http://collectiveidea.com, released under the MIT license
