@@ -16,6 +16,6 @@ end
 #
 class Date
   def is_css_naked_day?
-    year == 2008 && month == 4 && day == 9
+    month == 4 && day == 9
   end
 end
